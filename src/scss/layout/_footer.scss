@@ -5,6 +5,14 @@
   line-height: 1.5rem;
   padding-top: 3.5rem;
 
+  @media all and (min-width: 900px) {
+    padding-top: 4.438rem;
+  }
+
+  @media all and (min-width: 1728px) {
+    padding-top: 8.188rem;
+  }
+
   & .menu {
     margin-left: 9.125rem;
     display: flex;
@@ -13,9 +21,19 @@
     align-items: flex-start;
 
     @media all and (min-width: 900px) {
+      margin-left: 7.375rem;
+      margin-right: 3.563rem;
+      padding-bottom: 4.625rem;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    @media all and (min-width: 1728px) {
       justify-content: space-around;
-      align-items: center;
+      margin-left: 11rem;
+      margin-right: auto;
+      padding-bottom: 8.188rem;
     }
 
     & .menu-title {
@@ -23,10 +41,18 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
+
+      @media all and (min-width: 1728px) {
+        font-size: 1.5rem;
+      }
     }
 
     & .menu-option {
       font-size: 0.875rem;
+
+      @media all and (min-width: 1728px) {
+        font-size: 1rem;
+      }
 
       & .link {
         text-decoration: none;
@@ -56,6 +82,10 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
+    @media all and (min-width: 900px) {
+      width: auto;
+    }
 
     & .fa-solid {
       color: white;
