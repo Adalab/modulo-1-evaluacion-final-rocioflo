@@ -2,15 +2,21 @@
   background-color: $thirdColor;
   color: $footerColor;
   font-family: $mainFont;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   line-height: 1.5rem;
   padding-top: 3.5rem;
 
   & .menu {
     margin-left: 9.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media all and (min-width: 900px) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     & .menu-title {
       margin-top: 1.25rem;
