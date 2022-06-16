@@ -1,0 +1,39 @@
+.fourth-section {
+  background-color: $mainColor;
+  font-family: $mainFont;
+  color: $thirdColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5.438rem;
+
+  & .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.625rem;
+  }
+  & .section-text {
+    font-size: 0.875rem;
+    max-width: 22.5rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+
+  & .section-button {
+    background-color: $thirdColor;
+    border: none;
+    height: 3rem;
+    width: 11rem;
+    color: white;
+    font-family: $mainFont;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 5.75rem;
+  }
+
+  & .section-image {
+    height: 19rem;
+  }
+}
