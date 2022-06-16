@@ -9,6 +9,14 @@
   justify-content: center;
   align-items: center;
 
+  @media all and (min-width: 900px) {
+    height: 22rem;
+  }
+
+  @media all and (min-width: 1728px) {
+    height: 25rem;
+  }
+
   & .icon {
     width: 7.5rem;
     height: 7.5rem;
@@ -22,12 +30,21 @@
     @media all and (min-width: 900px) {
       font-size: 1.875rem;
     }
+
+    @media all and (min-width: 1728px) {
+      font-size: 2.25rem;
+    }
   }
 
   & .section-text {
     font-size: 0.875rem;
     padding-top: 0.625rem;
+
+    @media all and (min-width: 1728px) {
+      font-size: 1rem;
+    }
   }
+
   & .section-button {
     height: 3rem;
     width: 10.938rem;
@@ -38,5 +55,8 @@
     font-weight: 600;
     text-decoration: underline;
     margin-top: 0.313rem;
+  }
+  @media all and (min-width: 1728px) {
+    margin-top: 0.375rem;
   }
 }
