@@ -5,11 +5,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   line-height: 1.5rem;
   padding-top: 3.5rem;
 
   & .menu {
+    margin-left: 9.125rem;
+
     & .menu-title {
       margin-top: 1.25rem;
       font-size: 1.25rem;
@@ -19,6 +21,40 @@
 
     & .menu-option {
       font-size: 0.875rem;
+
+      & .link {
+        text-decoration: none;
+        color: $footerColor;
+        font-family: $mainFont;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  & .social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    & .social-media-icon {
+      color: white;
+      height: 1.625rem;
+    }
+  }
+
+  & .arrow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    & .fa-solid {
+      color: white;
+      padding-right: 1.75rem;
+      padding-bottom: 1rem;
     }
   }
 }

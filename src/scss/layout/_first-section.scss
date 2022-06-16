@@ -6,21 +6,25 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: 3.875rem;
 
-  & .logo {
-    height: 6rem;
-    width: 13.313rem;
-    padding-top: 1.188rem;
+  @media all and (min-width: 900px) {
+    align-items: flex-start;
+    padding-left: 9.188rem;
   }
 
   & .claim {
     font-family: $mainFont;
     color: $thirdColor;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    @media all and (min-width: 900px) {
+      max-width: 26.875rem;
+      font-size: 2.25rem;
+    }
   }
 
   & .first-button {
