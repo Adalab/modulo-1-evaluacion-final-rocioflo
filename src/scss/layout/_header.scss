@@ -17,9 +17,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    @media all and (min-width: 900px) {
-    }
   }
 
   & .burger-menu {
@@ -126,5 +123,9 @@
     font-weight: bolder;
     text-transform: capitalize;
     margin-bottom: 4rem;
+
+    &:hover {
+      background-color: $secondColor;
+    }
   }
 }
