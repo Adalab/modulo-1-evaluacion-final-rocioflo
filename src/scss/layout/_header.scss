@@ -4,69 +4,79 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
 
   @media all and (min-width: 900px) {
   }
 
-  & .menu {
+  & .header-menu {
     padding: 0.625rem;
-    // margin-top: 2.813rem;
-    // margin-left: 2.063rem;
-    color: $thirdColor;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
     @media all and (min-width: 900px) {
-      position: fixed;
-      top: 0;
     }
   }
+
+  & .burger-menu {
+    color: $thirdColor;
+    position: fixed;
+    top: 0;
+    padding-top: 3.438rem;
+    padding-left: 2.063rem;
+  }
+
+  & .menu {
+    display: none;
+  }
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   & .logo {
     height: 6rem;
     width: 13.313rem;
-    transform: translateX(-95px);
-    // padding-top: 1.188rem;
+  }
+}
+
+.first-section {
+  margin-top: 3.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.875rem;
+
+  @media all and (min-width: 900px) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 9.188rem;
   }
 
-  .first-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3.875rem;
+  & .claim {
+    font-family: $mainFont;
+    color: $thirdColor;
+    font-weight: 600;
+    font-size: 1.5rem;
 
     @media all and (min-width: 900px) {
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding-left: 9.188rem;
+      max-width: 26.875rem;
+      font-size: 2.25rem;
     }
+  }
 
-    & .claim {
-      font-family: $mainFont;
-      color: $thirdColor;
-      font-weight: 600;
-      font-size: 1.5rem;
-
-      @media all and (min-width: 900px) {
-        max-width: 26.875rem;
-        font-size: 2.25rem;
-      }
-    }
-
-    & .first-button {
-      background-color: $thirdColor;
-      border: none;
-      height: 3rem;
-      width: 11rem;
-      color: white;
-      font-family: $mainFont;
-      font-size: 1rem;
-      font-weight: bolder;
-      text-transform: capitalize;
-      margin-bottom: 4rem;
-    }
+  & .first-button {
+    background-color: $thirdColor;
+    border: none;
+    height: 3rem;
+    width: 11rem;
+    color: white;
+    font-family: $mainFont;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
   }
 }
