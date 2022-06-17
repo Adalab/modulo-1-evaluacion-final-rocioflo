@@ -6,12 +6,10 @@
   background-repeat: no-repeat;
 
   @media all and (min-width: 900px) {
-    background-size: 160%;
     background-position: center right;
   }
 
   @media all and (min-width: 1728px) {
-    background-size: cover;
     background-position: center;
   }
 
