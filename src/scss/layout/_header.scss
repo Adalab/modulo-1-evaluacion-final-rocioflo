@@ -21,7 +21,7 @@
 
   & .burger-menu {
     color: $thirdColor;
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-top: 3.438rem;
     padding-left: 2.063rem;
@@ -52,7 +52,7 @@
 
     @media all and (min-width: 1728px) {
       display: flex;
-      position: fixed;
+      position: absolute;
       top: 0;
       margin-top: 4.125rem;
       margin-left: 16.875rem;
@@ -126,6 +126,7 @@
 
     &:hover {
       background-color: $secondColor;
+      border: 2px solid white;
     }
   }
 }

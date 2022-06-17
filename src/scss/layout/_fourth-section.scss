@@ -38,7 +38,8 @@
         text-align: left;
         font-size: 2.25rem;
         max-width: 26.875rem;
-        line-height: 3rem;
+        line-height: 3.1rem;
+        padding-bottom: 0;
       }
     }
 
@@ -56,6 +57,8 @@
         font-size: 1rem;
         text-align: left;
         max-width: 17.563rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
       }
     }
 
@@ -70,6 +73,11 @@
       font-weight: bolder;
       text-transform: capitalize;
       margin-bottom: 5.75rem;
+
+      &:hover {
+        background-color: $secondColor;
+        border: 2px solid white;
+      }
     }
 
     & .section-image {
